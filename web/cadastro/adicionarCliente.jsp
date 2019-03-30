@@ -27,7 +27,7 @@
             <br/><input type="text" name="fone" />
             <br/>Endereço:
             <br/><input type="text" name="ender" />
-            <h2>Deseja incluir o novo contato?</h2>
+            <h2>Deseja incluir o novo cadastro?</h2>
             <input type="submit" name="adicionar" value="Sim"/>
             <input type="submit" name="adicionar" value="Não"/>
         </form>
