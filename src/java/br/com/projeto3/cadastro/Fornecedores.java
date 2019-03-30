@@ -10,7 +10,7 @@ package br.com.projeto3.cadastro;
  * @author Soryu
  */
 public class Fornecedores {
-     private String nome;
+    private String nome;
     private String rSocial;
     private String cnpj;
     private String email;
