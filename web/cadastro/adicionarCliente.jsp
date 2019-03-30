@@ -1,7 +1,7 @@
 <%-- 
     Document   : adicionar
-    Created on : 29/03/2019, 11:00:51
-    Author     : Soryu
+    Created on : 26/03/2019, 21:38:57
+    Author     : User
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Adicionar Cliente</title>
     </head>
     <body>
         <h1>Hello World!</h1>
