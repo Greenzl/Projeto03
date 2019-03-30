@@ -12,6 +12,24 @@
         <title>Adicionar Cliente</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Clientes</h1>
+        <h2>Adicionar</h2>
+        <form>
+            Nome:
+            <br/><input type="text" name="nome" />
+            <br/>CPF:
+            <br/><input type="text" name="cpf" />
+            <br/>RG:
+            <br/><input type="text" name="rg" />
+            <br/>E-mail:
+            <br/><input type="text" name="email" />
+            <br/>Telefone:
+            <br/><input type="text" name="fone" />
+            <br/>Endereço:
+            <br/><input type="text" name="ender" />
+            <h2>Deseja incluir o novo contato?</h2>
+            <input type="submit" name="adicionar" value="Sim"/>
+            <input type="submit" name="adicionar" value="Não"/>
+        </form>
     </body>
 </html>
