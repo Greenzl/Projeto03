@@ -9,9 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Lista de Cadastros</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Selecione o cadastro que deseja consultar!</h1>
+        <select name="tipo">
+            <option value="cliente"><a href="listaCliente.jsp">Clientes</a></option>
+            <option value="fornecedor"><a href="listaFornecedor.jsp"">Fornecedores</a></option>
+        </select>
     </body>
 </html>
