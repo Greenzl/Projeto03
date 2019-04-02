@@ -16,12 +16,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1 class="text-left">Selecione o cadastro que deseja consultar!</h1>
-        <select name="tipo" onchange="location = this.value;" class="custom-select custom-select-sm mb-3">
-            <option>Selecione</option>
-            <option value="listaCliente.jsp">Clientes</option>
-            <option value="listaFornecedor.jsp">Fornecedores</option>
-        </select>
+        <%@include file="WEB-INF/jspf/head.jspf" %>
+        <h1>Lista Cliente</h1>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <br>
         <br/>
         <br/>
         <br/>
@@ -39,6 +37,6 @@
         <br/>
         <br/>
         <hr/>
-        <h5 class="text-center">Desenvolvido por Grupo 11 - Luiz H Carminati | Vinícius de Moura | Rodrigo Vieira</h5>
+                <%@include file="WEB-INF/jspf/foot.jspf" %>
     </body>
 </html>
