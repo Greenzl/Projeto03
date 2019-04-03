@@ -1,0 +1,12 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<hr/>
+<body>
+        <h1 class="text-left">Selecione o cadastro que deseja consultar!</h1>
+        <select name="tipo" onchange="location = this.value;" class="custom-select custom-select-sm mb-3">
+            <option>Selecione</option>
+            <option value="listaCliente.jsp">Clientes</option>
+            <option value="listaFornecedor.jsp">Fornecedores</option>
+        </select>
+
+<hr/>

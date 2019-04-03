@@ -29,7 +29,7 @@
     }
 %>
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -55,7 +55,7 @@
             Endereço: <input type="text" name="endereco" value="<%= cliente.getEndereco()%>">
             <br><br>
             <input type="submit" name="alterar" value="Alterar">
-            <a href="index.jsp.jsp"><input type="button"value="Cancelar"></a>
+            <a href="listaCliente.jsp"><input type="button"value="Cancelar"></a>
             <input type="hidden" name="id" value="<%= id %>">
             
         </form>

@@ -5,11 +5,13 @@
  */
 package br.com.projeto3.cadastro;
 
+import java.io.InvalidClassException;
+
 /**
  *
  * @author Soryu
  */
-public class Clientes {
+public class Clientes{
     private String nome;
     private String cpf;
     private String rg;
@@ -63,5 +65,30 @@ public class Clientes {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+    public void Create(Object data) {
+        Clientes c = (Clientes) data;
+        Bd.getClientes().add(c);
+    }
+
+    public Object Read() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
+    public void Update(Object obj, Object data) {
+       Clientes cliente = (Clientes) obj;
+       Bd.getClientes().set((Integer) data, cliente);
+    }
+
+    /**
+     *
+     * @param cliente
+     * @return boolean
+     * @throws InvalidClassException
+     */
+    
+    public boolean Delete() throws InvalidClassException{
+        return false;
     }
 }

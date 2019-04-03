@@ -11,6 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <title>JSP Page</title>
     </head>
     <body>
@@ -19,7 +20,7 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <br>
 
-        <table border="1" style="width: 100%">
+        <table class="table" border="1" style="width: 100%">
             <tr>
                 <td>#ID</td>
                 <td>Nome</td>
@@ -44,7 +45,7 @@
                 <td><%=fornecedor.getTelefone()%></td>
                 <td><%=fornecedor.getEndereco()%></td>
                 <td><a href="alterarFornecedor.jsp?id=<%=id%>">Alterar</a></td>
-                <td><a href="excluirFornecedor.jsp<%=id%>">Remover</a></td>
+                <td><a href="excluirFornecedor.jsp?id=<%=id%>">Remover</a></td>
                 <td><a href="adicionarFornecedor.jsp"<%=id%>">Adicionar</a></td>
             </tr>
             <%}%>

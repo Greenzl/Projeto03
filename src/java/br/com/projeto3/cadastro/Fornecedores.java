@@ -5,13 +5,15 @@
  */
 package br.com.projeto3.cadastro;
 
+import java.io.InvalidClassException;
+
 /**
  *
  * @author Soryu
  */
 public class Fornecedores {
     private String nome;
-    private String rSocial;
+    private String RazaoSocial;
     private String cnpj;
     private String email;
     private String endereco;
@@ -25,12 +27,12 @@ public class Fornecedores {
         this.nome = nome;
     }
 
-    public String getrSocial() {
-        return rSocial;
+    public String getRazaoSocial() {
+        return RazaoSocial;
     }
 
-    public void setrSocial(String rSocial) {
-        this.rSocial = rSocial;
+    public void setRazaoSocial(String RazaoSocial) {
+        this.RazaoSocial = RazaoSocial;
     }
 
     public String getCnpj() {
@@ -64,4 +66,25 @@ public class Fornecedores {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+    public void Create(Object data) {
+       Fornecedores fornecedor = (Fornecedores) data;
+       Bd.getFornecedores().add(fornecedor);
+    }
+
+ 
+    public Object Read() {
+        throw new UnsupportedOperationException("^^");   }
+
+    public void Update(Object obj, Object data) {
+       Fornecedores fornecedor = (Fornecedores) obj;
+       Bd.getFornecedores().set((Integer) data, fornecedor);
+    }
+
+    public boolean Delete() throws InvalidClassException{
+
+           return Bd.getFornecedores().remove(this);
+
+    }
+
 }
